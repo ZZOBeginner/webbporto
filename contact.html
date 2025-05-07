@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Contact page with form and WhatsApp link." />
+  <meta name="keywords" content="contact, form, whatsapp" />
+  <meta name="author" content="Your Name" />
+  <title>Luxury Portfolio - Contact</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="galaxy-background"></canvas>
+
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">WEBTIZ</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Project</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="order.html">Order Web</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contact-main">
+    <h1>Contact Me</h1>
+    <form class="contact-form" action="mailto:your.email@example.com" method="POST" enctype="text/plain">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required placeholder="Your name" />
+      
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required placeholder="Your email" />
+      
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required placeholder="Your message"></textarea>
+      
+      <button type="submit" class="submit-button">Kirim</button>
+    </form>
+    <div class="whatsapp-contact">
+      <p>Or contact me directly on WhatsApp:</p>
+      <a href="https://wa.me/6281542522011" target="_blank" rel="noopener noreferrer" class="whatsapp-button">Chat on WhatsApp</a>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
